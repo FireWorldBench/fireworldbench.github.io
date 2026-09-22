@@ -1,0 +1,202 @@
+[
+  {
+    "file": "overview.webp",
+    "width": 1816,
+    "height": 1280,
+    "page": 1,
+    "crop_points": [
+      71,
+      249,
+      525,
+      569
+    ],
+    "method": "page crop at 288 dpi",
+    "figure": 1
+  },
+  {
+    "file": "pipeline.webp",
+    "width": 1128,
+    "height": 536,
+    "page": 9,
+    "crop_points": [
+      244,
+      108,
+      526,
+      242
+    ],
+    "method": "page crop at 288 dpi",
+    "figure": 4
+  },
+  {
+    "file": "real-world.webp",
+    "width": 1744,
+    "height": 1452,
+    "page": 10,
+    "crop_points": [
+      80,
+      86,
+      516,
+      449
+    ],
+    "method": "page crop at 288 dpi",
+    "figure": 5,
+    "label": "Real-world-aligned fire-world reconstruction"
+  },
+  {
+    "file": "scene-transport.webp",
+    "width": 1744,
+    "height": 1262,
+    "page": 65,
+    "crop_points": [
+      80,
+      230.058,
+      516,
+      545.367
+    ],
+    "method": "page crop at 288 dpi",
+    "figure": 16,
+    "family": "Transportation and Infrastructure",
+    "scene": "Electric Bus Terminal Charging-bay Fire"
+  },
+  {
+    "file": "scene-office.webp",
+    "width": 1744,
+    "height": 1253,
+    "page": 66,
+    "crop_points": [
+      80,
+      237.082,
+      516,
+      550.139
+    ],
+    "method": "page crop at 288 dpi",
+    "figure": 17,
+    "family": "Office and Digital Facilities",
+    "scene": "Data-centre Cold-aisle Cable-tray Fire"
+  },
+  {
+    "file": "scene-healthcare.webp",
+    "width": 1744,
+    "height": 1265,
+    "page": 67,
+    "crop_points": [
+      80,
+      229.797,
+      516,
+      545.862
+    ],
+    "method": "page crop at 288 dpi",
+    "figure": 18,
+    "family": "Healthcare and Education",
+    "scene": "Teaching Medical Laboratory Solvent-bench Fire"
+  },
+  {
+    "file": "scene-commercial.webp",
+    "width": 1744,
+    "height": 1258,
+    "page": 68,
+    "crop_points": [
+      80,
+      236.472,
+      516,
+      550.723
+    ],
+    "method": "page crop at 288 dpi",
+    "figure": 19,
+    "family": "Commercial and Public Spaces",
+    "scene": "Public Atrium Kiosk Fire"
+  },
+  {
+    "file": "scene-residential.webp",
+    "width": 1744,
+    "height": 1259,
+    "page": 69,
+    "crop_points": [
+      80,
+      230.283,
+      516,
+      544.957
+    ],
+    "method": "page crop at 288 dpi",
+    "figure": 20,
+    "family": "Residential and Care Settings",
+    "scene": "Night-shift Care Ward Linen-cart Fire"
+  },
+  {
+    "file": "scene-industrial.webp",
+    "width": 1744,
+    "height": 1265,
+    "page": 70,
+    "crop_points": [
+      80,
+      230.151,
+      516,
+      546.068
+    ],
+    "method": "page crop at 288 dpi",
+    "figure": 21,
+    "family": "Industry, Energy, and Logistics",
+    "scene": "Integrated Refinery Pipe-rack Energy Fire"
+  },
+  {
+    "file": "scene-wildland.webp",
+    "width": 1744,
+    "height": 1256,
+    "page": 71,
+    "crop_points": [
+      80,
+      230.494,
+      516,
+      544.233
+    ],
+    "method": "page crop at 288 dpi",
+    "figure": 22,
+    "family": "Wildland and Wildland–Urban Interface",
+    "scene": "Hillside WUI Evacuation-lane Fire"
+  },
+  {
+    "file": "hero-observation.webp",
+    "width": 1118,
+    "height": 961,
+    "page": 10,
+    "xref": 602,
+    "method": "native embedded image",
+    "label": "Observed experimental video frame"
+  },
+  {
+    "file": "hero-geometry.webp",
+    "width": 1235,
+    "height": 843,
+    "page": 10,
+    "xref": 609,
+    "method": "native embedded image",
+    "label": "Aligned 3D reconstruction"
+  },
+  {
+    "file": "hero-temperature.webp",
+    "width": 996,
+    "height": 1000,
+    "page": 10,
+    "xref": 616,
+    "method": "native embedded image",
+    "label": "Simulation-completed temperature field"
+  },
+  {
+    "file": "hero-soot.webp",
+    "width": 1000,
+    "height": 1000,
+    "page": 10,
+    "xref": 622,
+    "method": "native embedded image",
+    "label": "Simulation-completed soot-density field"
+  },
+  {
+    "file": "hero-scene.webp",
+    "width": 1280,
+    "height": 1280,
+    "page": 65,
+    "xref": 307,
+    "method": "native embedded image",
+    "label": "Electric bus terminal 3D geometry"
+  }
+]

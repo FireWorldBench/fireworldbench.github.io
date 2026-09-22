@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#faf9f7">
+  <meta name="description" content="FireWorldBench benchmarks complex physical-world intelligence through coupled-field fire dynamics: 520 fire worlds, 47 scene archetypes, and 9,074 question–answer instances.">
+  <meta property="og:title" content="FireWorldBench — Understanding a coupled physical world">
+  <meta property="og:description" content="A multimodal benchmark spanning 520 fire worlds and five dimensions of physical intelligence.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fireworldbench.github.io/">
+  <link rel="canonical" href="https://fireworldbench.github.io/">
+  <title>FireWorldBench · Coupled-Field Physical Intelligence</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23e4512d'/%3E%3Cpath d='M18 5C19 12 25 13 24 21a8 8 0 0 1-16 0c0-5 3-7 4-10 0 4 2 5 3 6 3-4 4-7 3-12Z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="wordmark" href="#" aria-label="FireWorldBench home"><span class="brand-icon" aria-hidden="true">♨</span> FireWorld<span>Bench</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#benchmark">Benchmark</a><a href="#worlds">Fire worlds</a><a href="#results">Results</a><a href="#citation">Citation</a>
+      </nav>
+      <a class="header-paper" href="assets/paper.pdf" target="_blank" rel="noopener">Read paper <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero section-shell" aria-labelledby="hero-title">
+      <div class="eyebrow"><span class="small-flame" aria-hidden="true">✳</span> A BENCHMARK FOR PHYSICAL WORLD INTELLIGENCE</div>
+      <h1 id="hero-title"><span class="hero-brand">FireWorldBench</span><span class="hero-title">Benchmarking Complex Physical World Intelligence through<br class="desktop-break"> Coupled-Field Fire Dynamics</span></h1>
+      <p class="hero-question">Can multimodal models understand a world of interacting physical fields?</p>
+      <div class="authors">
+        <p>Qiang Chen<sup>1★†</sup><span>Hao Guo<sup>2★</sup></span><span>Huatai Zhu<sup>2★</sup></span><span>Tairan Huang<sup>2★</sup></span><span>Yichao Cao<sup>2</sup></span></p>
+        <p>Hongyan Xu<sup>2</sup><span>Keke Huang<sup>2</sup></span><span>Haifeng Li<sup>2</sup></span><span>Yi Chen<sup>1‡</sup></span><span>Xiu Su<sup>2‡</sup></span></p>
+        <p class="affiliations"><span><sup>1</sup> Hong Kong University of Science and Technology</span><span><sup>2</sup> Central South University</span></p>
+        <p class="contribution">★ Core contributors &nbsp; † Project lead &nbsp; ‡ Corresponding authors</p>
+      </div>
+      <div class="resource-links">
+        <a class="button primary" href="assets/paper.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></svg> Paper <span aria-hidden="true">↗</span></a>
+        <a class="button" href="https://github.com/FireWorldLab/FireWorldBench" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1-4-2-6-2m12 5v-3.8c0-1 .1-1.4-.5-2 3.2-.4 6.5-1.5 6.5-7A5.4 5.4 0 0 0 19.5 5 5 5 0 0 0 19.4 1S18.2.6 15 2.5a13 13 0 0 0-6 0C5.8.6 4.6 1 4.6 1a5 5 0 0 0-.1 4A5.4 5.4 0 0 0 3 9.2c0 5.5 3.3 6.6 6.5 7-.6.6-.6 1.2-.5 2V22"/></svg> Code</a>
+        <a class="button" href="https://huggingface.co/datasets/FireWorldLab/FireWorldBench" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0"/></svg> Dataset</a>
+        <a class="button" href="#results"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M7 16V9m5 7V4m5 12v-5"/></svg> Results</a>
+      </div>
+
+      <p class="resource-note">Code and dataset links are listed in the manuscript; public access is currently unavailable.</p>
+      <div class="takeaway"><span class="takeaway-label">KEY TAKEAWAY</span><p>Recognizing a fire is only the beginning. Understanding <strong>how physical fields interact</strong> remains a challenge for today’s models.</p></div>
+
+      <div class="evidence-panel">
+        <div class="evidence-heading"><div><span class="figure-kicker">ONE EVENT. MULTIPLE PHYSICAL VIEWS.</span><h2>From visible fire to invisible dynamics.</h2></div><span class="evidence-tag">Real-world-aligned · Fig. 5</span></div>
+        <div class="evidence-grid">
+          <figure><div class="evidence-image observation"><img src="assets/hero-observation.webp" width="420" height="360" alt="Observed video frame of the heptane pool-fire experiment" fetchpriority="high"></div><figcaption><span class="field-number">01</span><span>Observed event<small>Video evidence</small></span></figcaption></figure>
+          <figure><div class="evidence-image geometry"><img src="assets/hero-geometry.webp" width="420" height="360" alt="Aligned three-dimensional reconstruction of the fire scene" fetchpriority="high"></div><figcaption><span class="field-number">02</span><span>3D reconstruction<small>Scene geometry</small></span></figcaption></figure>
+          <figure><div class="evidence-image"><img src="assets/hero-temperature.webp" width="420" height="360" alt="Temperature field from the aligned fire simulation" fetchpriority="high"></div><figcaption><span class="field-number">03</span><span>Temperature<small>Thermal evolution</small></span></figcaption></figure>
+          <figure><div class="evidence-image"><img src="assets/hero-soot.webp" width="420" height="360" alt="Soot density field from the aligned fire simulation" fetchpriority="high"></div><figcaption><span class="field-number">04</span><span>Soot density<small>Smoke transport</small></span></figcaption></figure>
+        </div>
+        <p class="evidence-note">Observed footage anchors the event; FDS reconstructs aligned physical fields.</p>
+      </div>
+
+      <div class="stats" aria-label="Benchmark statistics">
+        <div><strong>520</strong><span>Fire worlds</span></div><div><strong>47</strong><span>Scene archetypes</span></div><div><strong>9,074</strong><span>Question–answer pairs</span></div><div><strong>5</strong><span>Physical capabilities</span></div><div><strong>7</strong><span>Environment families</span></div>
+      </div>
+    </section>
+
+    <section id="benchmark" class="content-section section-shell">
+      <div class="section-heading"><span class="eyebrow">01 / THE BENCHMARK</span><h2>Physical intelligence,<br>under a different kind of test.</h2><p>Beyond objects and appearances: reasoning about continuous fields, hidden mechanisms, and a world that changes over time.</p></div>
+      <div class="abstract"><p>FireWorldBench is a multimodal benchmark for complex physical-world intelligence through coupled-field fire dynamics. Across <strong>520 fire worlds and 9,074 question–answer instances</strong>, it combines structured observations, physical-field visualizations, and 3D scene representations.</p><p>A dual-axis evaluation tests five physical capabilities across three stages of fire evolution, using matched choice and open-report interfaces. The results reveal persistent gaps in reading physical fields, connecting observations to causal mechanisms, and reasoning about interventions.</p></div>
+      <div class="capability-grid">
+        <article class="capability"><span class="capability-code">P1 <span aria-hidden="true">↗</span></span><h3>Temporal<br>forecasting</h3><p>What happens next?</p><div>Predict how fire and physical fields evolve from partial observations.</div></article>
+        <article class="capability"><span class="capability-code">P2 <span aria-hidden="true">⊙</span></span><h3>Perception<br>& grounding</h3><p>What is happening, and where?</p><div>Locate and interpret physical states within the scene.</div></article>
+        <article class="capability"><span class="capability-code">P3 <span aria-hidden="true">⇌</span></span><h3>Cross-field<br>coupling</h3><p>How do the fields interact?</p><div>Connect heat, smoke, airflow, and visibility as one system.</div></article>
+        <article class="capability"><span class="capability-code">P4 <span aria-hidden="true">⤷</span></span><h3>Causal<br>attribution</h3><p>Why does it happen?</p><div>Explain observed changes through their physical mechanisms.</div></article>
+        <article class="capability"><span class="capability-code">P5 <span aria-hidden="true">⑂</span></span><h3>Counterfactual<br>intervention</h3><p>What if conditions change?</p><div>Reason about interventions and their downstream effects.</div></article>
+      </div>
+      <div class="task-axis"><span class="axis-label">Across three stages</span><span><b>T1</b> Localized onset</span><i aria-hidden="true">→</i><span><b>T2</b> Coupled propagation</span><i aria-hidden="true">→</i><span><b>T3</b> Critical transition</span></div>
+      <figure class="paper-figure overview-figure"><button class="figure-button" type="button" data-lightbox="assets/overview.webp" data-caption="Figure 1. FireWorldBench overview." aria-label="Enlarge benchmark overview"><img src="assets/overview.webp" width="1500" height="1057" loading="lazy" alt="Paper overview showing FireWorldBench sources, physical capabilities, evaluation formats, and findings"><span class="expand-hint">View full figure ↗</span></button><figcaption><b>Figure 1.</b> From multimodal fire worlds to capability-resolved evaluation.</figcaption></figure>
+    </section>
+
+    <section id="worlds" class="worlds-section">
+      <div class="section-shell content-section">
+        <div class="section-heading"><span class="eyebrow">02 / EXPLORE THE FIRE WORLDS</span><h2>One physical world.<br>Many ways to observe it.</h2><p>Co-registered 3D scenes and physical fields reveal how a fire develops across seven environment families.</p></div>
+        <div class="world-viewer">
+          <div class="scene-tabs" role="tablist" aria-label="Environment family">
+            <button id="tab-transport" role="tab" aria-selected="true" aria-controls="scene-panel" data-scene="transport">Transportation</button><button id="tab-office" role="tab" aria-selected="false" aria-controls="scene-panel" tabindex="-1" data-scene="office">Office & digital</button><button id="tab-healthcare" role="tab" aria-selected="false" aria-controls="scene-panel" tabindex="-1" data-scene="healthcare">Healthcare</button><button id="tab-commercial" role="tab" aria-selected="false" aria-controls="scene-panel" tabindex="-1" data-scene="commercial">Commercial</button><button id="tab-residential" role="tab" aria-selected="false" aria-controls="scene-panel" tabindex="-1" data-scene="residential">Residential</button><button id="tab-industrial" role="tab" aria-selected="false" aria-controls="scene-panel" tabindex="-1" data-scene="industrial">Industry & energy</button><button id="tab-wildland" role="tab" aria-selected="false" aria-controls="scene-panel" tabindex="-1" data-scene="wildland">Wildland</button>
+          </div>
+          <div id="scene-panel" class="scene-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-transport">
+            <div class="scene-heading"><div><span id="scene-family" class="figure-kicker">TRANSPORTATION AND INFRASTRUCTURE</span><h3 id="scene-title">Electric bus terminal charging-bay fire</h3></div><span class="scene-badge">Controlled simulation</span></div>
+            <button class="figure-button scene-figure" type="button" data-lightbox="assets/scene-transport.webp" data-caption="Figure 16. Electric bus terminal charging-bay fire." aria-label="Enlarge current fire-world sequence"><img id="scene-image" src="assets/scene-transport.webp" width="1533" height="1135" loading="lazy" alt="Time-resolved 3D scenes, temperature, soot, velocity, visibility, and streamwise velocity for a bus terminal fire"><span class="expand-hint">Explore full resolution ↗</span></button>
+            <div class="scene-footer"><p id="scene-description">Follow the buoyant plume, bay-scale confinement, and longitudinal smoke transport through a charging-bay fire.</p><span id="scene-reference">Paper · Fig. 16</span></div>
+          </div>
+        </div>
+        <div class="world-split"><div><span class="split-number">494</span><h3>Controlled simulation worlds</h3><p>Reproducible scenarios with aligned geometry, physical fields, and temporal observations.</p></div><div class="split-divider" aria-hidden="true">+</div><div><span class="split-number">26</span><h3>Real-world-aligned event groups</h3><p>Observed experimental fires anchor reconstructions, with latent fields completed through simulation.</p></div></div>
+      </div>
+    </section>
+
+    <section id="results" class="content-section section-shell">
+      <div class="section-heading"><span class="eyebrow">03 / EVALUATION & FINDINGS</span><h2>Seeing the fields<br>isn’t yet understanding them.</h2><p>A complementary evaluation of structured physical records and multimodal visual evidence.</p></div>
+      <div class="result-toolbar"><div class="result-tabs" role="tablist" aria-label="Evaluation setting"><button id="results-simulated" role="tab" aria-selected="true" aria-controls="results-panel" data-setting="simulated">Controlled simulation</button><button id="results-real" role="tab" aria-selected="false" aria-controls="results-panel" tabindex="-1" data-setting="real">Real-world-aligned</button></div><span class="table-hint">Click a heading to sort <span aria-hidden="true">↕</span></span></div>
+      <div id="results-panel" role="tabpanel" aria-labelledby="results-simulated" tabindex="0">
+        <div class="table-scroll"><table class="results-table"><caption id="results-caption" class="sr-only">Frontier model completion accuracy on controlled simulation, averaged over five physical capabilities</caption><thead><tr><th scope="col" aria-sort="none"><button data-sort="name">Model <span aria-hidden="true">↕</span></button></th><th scope="col" aria-sort="descending"><button data-sort="s">S-track <span class="th-subtitle">Structured records</span><span aria-hidden="true" class="sort-arrow">↓</span></button></th><th scope="col" aria-sort="none"><button data-sort="i">I-track <span class="th-subtitle">Multimodal evidence</span><span aria-hidden="true" class="sort-arrow">↕</span></button></th><th scope="col" aria-sort="none"><button data-sort="gap">S − I <span class="th-subtitle">Accuracy gap</span><span aria-hidden="true" class="sort-arrow">↕</span></button></th></tr></thead><tbody id="results-body">
+          <tr><th scope="row">GPT-5.6-Luna</th><td class="best-score">55.34<span class="best-label">BEST</span></td><td>42.99</td><td class="gap-cell">12.35</td></tr><tr><th scope="row">Qwen3.5-Plus-02-15</th><td>47.25</td><td>39.40</td><td class="gap-cell">7.85</td></tr><tr><th scope="row">Gemini-2.5-Flash</th><td>46.20</td><td class="best-score">44.83<span class="best-label">BEST</span></td><td class="gap-cell">1.37</td></tr><tr><th scope="row">Claude-Haiku-4.5</th><td>44.78</td><td>39.51</td><td class="gap-cell">5.27</td></tr>
+        </tbody></table></div>
+        <p class="table-note">Completion accuracy (%), averaged over P1–P5 and aggregating choice and open-report scores. Frontier-model excerpt from <span id="table-source">Table 1</span>; best scores are highlighted within this selection. The S − I gap is in percentage points.</p>
+      </div>
+      <div class="findings-grid"><article><span class="finding-number">01</span><h3>A visual evidence gap</h3><p>All four frontier models score lower on rendered physical evidence than on structured records in the reported capability averages.</p></article><article><span class="finding-number">02</span><h3>Answers need mechanisms</h3><p>Evidence-F1, Mechanism Alignment, and Gold-Linked Support evaluate whether explanations connect predictions to physical evidence.</p></article><article><span class="finding-number">03</span><h3>Adaptation helps</h3><p>FireWorldGPT studies physics-aware prompting, chain-of-thought reasoning, and supervised adaptation to strengthen domain understanding.</p></article></div>
+      <div class="adaptation"><div class="adaptation-copy"><span class="eyebrow">FIREWORLDGPT</span><h3>A path toward better<br>physical understanding.</h3><p>Supervised adaptation improves completion accuracy across all four evaluated base models.</p><p class="gain"><strong>+12.0</strong><span>percentage points<br>largest accuracy improvement</span></p></div><div class="adaptation-chart"><div class="chart-legend"><span><i class="legend-vanilla"></i>Vanilla</span><span><i class="legend-sft"></i>+ Supervised fine-tuning</span></div><div id="adaptation-bars"></div><p class="chart-note">Controlled simulations · Table 5 · Accuracy (%)<br>Accuracy gains do not imply improved confidence calibration.</p></div></div>
+    </section>
+
+    <section id="method" class="method-section"><div class="section-shell content-section"><div class="section-heading"><span class="eyebrow">04 / FROM WORLDS TO QUESTIONS</span><h2>Grounded in physics.<br>Evaluated along two axes.</h2></div><div class="method-grid"><div><p class="method-intro">Designed scenarios and observed experiments flow through a shared, provenance-preserving pipeline.</p><ol class="method-steps"><li><span>01</span><div><h3>Construct the world</h3><p>Define geometry, materials, ignition, and event constraints.</p></div></li><li><span>02</span><div><h3>Resolve the physics</h3><p>FDS simulates coupled fields; Smokeview produces aligned 3D renderings.</p></div></li><li><span>03</span><div><h3>Ask, predict, explain</h3><p>Matched questions test five capabilities across three fire stages, scored without an LLM judge.</p></div></li></ol></div><figure class="paper-figure pipeline-figure"><button class="figure-button" type="button" data-lightbox="assets/pipeline.webp" data-caption="Figure 4. Construction pipeline of FireWorldBench." aria-label="Enlarge construction pipeline"><img src="assets/pipeline.webp" width="1100" height="578" loading="lazy" alt="Construction pipeline from real or designed fires to FDS, Smokeview, visual assets, and structured observations"><span class="expand-hint">View full figure ↗</span></button><figcaption><b>Figure 4.</b> A shared physical state connects the representations.</figcaption></figure></div></div></section>
+
+    <section id="citation" class="content-section section-shell citation-section"><div class="citation-intro"><span class="eyebrow">BUILD ON THIS WORK</span><h2>Citation</h2><p>If you find FireWorldBench useful in your research, please cite the manuscript.</p><p class="citation-note">Citation for the 2026 manuscript.</p></div><div class="citation-card"><div class="code-header"><span>BibTeX</span><button id="copy-citation" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V3H3v13h5"/></svg><span>Copy citation</span></button></div><pre><code id="bibtex">@misc{chen2026fireworldbench,
+  title  = {FireWorldBench: Benchmarking Complex Physical
+            World Intelligence through Coupled-Field
+            Fire Dynamics},
+  author = {Qiang Chen and Hao Guo and Huatai Zhu and
+            Tairan Huang and Yichao Cao and Hongyan Xu and
+            Keke Huang and Haifeng Li and Yi Chen and Xiu Su},
+  year   = {2026},
+  url    = {https://FireWorldBench.github.io/}
+}</code></pre><p id="copy-status" class="sr-only" role="status" aria-live="polite"></p></div></section>
+  </main>
+
+  <footer class="site-footer section-shell"><a class="wordmark" href="#"><span class="brand-icon" aria-hidden="true">♨</span> FireWorld<span>Bench</span></a><p>Understanding a coupled physical world.</p><a href="#">Back to top ↑</a></footer>
+  <dialog id="figure-dialog" aria-labelledby="figure-dialog-caption"><div class="dialog-toolbar"><p id="figure-dialog-caption"></p><button id="close-dialog" type="button" aria-label="Close enlarged figure">✕</button></div><div class="dialog-image-wrap"><img id="dialog-image" alt=""></div></dialog>
+  <noscript><div class="noscript-note">The paper and figures are available without JavaScript. Enable JavaScript to switch scenes, sort results, and copy the citation.</div></noscript>
+</body>
+</html>
