@@ -198,5 +198,15 @@
     "xref": 307,
     "method": "native embedded image",
     "label": "Electric bus terminal 3D geometry"
+  },
+  {
+    "file": "hero-real-fire.webp",
+    "width": 512,
+    "height": 512,
+    "page": 1,
+    "figure": 1,
+    "xref": 1751,
+    "method": "native embedded image",
+    "label": "Real fire event photograph shown in Figure 1"
   }
 ]
