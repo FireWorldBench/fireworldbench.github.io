@@ -64,6 +64,7 @@ for page, slug, family, scene in scenes:
 
 # Image xrefs refer to this supplied PDF, not an external re-creation.
 hero = [
+    ("hero-real-fire", 1, 1751, "Real fire event photograph shown in Figure 1"),
     ("hero-observation", 10, 602, "Observed experimental video frame"),
     ("hero-geometry", 10, 609, "Aligned 3D reconstruction"),
     ("hero-temperature", 10, 616, "Simulation-completed temperature field"),
